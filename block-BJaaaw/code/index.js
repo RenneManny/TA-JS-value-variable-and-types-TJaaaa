@@ -151,3 +151,20 @@ switch(marks){
   - If`freezing` alert`Get your sweeter on`
   - Anything else should alert`Not a valid input`
 */
+let question=prompt(`What is the weather like outside?`);
+if(question=="sunny"){
+  alert(`Wear a T-shirt`);
+}
+else if(question=="rainy"){
+  alert(`Don't forget to take your raincoat`);
+}
+else if (question=='hot'){
+  alert(`Get a hanky`);
+}
+else if(question==`freezing`){
+  alert(`Get your sweeter on`);
+}
+else(
+  alert(`Not a valid input`)
+);
+
