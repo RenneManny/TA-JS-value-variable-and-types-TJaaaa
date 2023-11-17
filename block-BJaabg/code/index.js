@@ -14,12 +14,18 @@ const ACCESSORY_PRICE = 9.99;
 var bank_balance = 303.91;
 var amount = 0;
 // your code goes here
-while(bank_balance<amount){
-    let purchaseAmount=PHONE_PRICE+TAX_RATE+SPENDING_THRESHOLD;
-    bank_balance++;
+while(amount<bank_balance){ //condition
+amount=amount+PHONE_PRICE;//increment
+if(amount<SPENDING_THRESHOLD){
+    amount=amount+ACCESSORY_PRICE;//increament
 }
-if(purchaseAmount>bank_balance){
-    alert(`You cannot afford this one.`);
+let TAX_Amount=amount*TAX_RATE;
 }
-
+alert(`${TAX_Amount}`);
+if(TAX_Amount>SPENDING_THRESHOLD){
+    alert(`Sorry it is too expensive!`);
+}
+else{
+    alert(`We can buy this.`);
+}
 // ⛑ Answer of the above will `$334.76`.
