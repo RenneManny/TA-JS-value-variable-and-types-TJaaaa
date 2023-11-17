@@ -1,4 +1,4 @@
-// Interview Problems**************10 questions.
+
 /* 1. Do the following
 
 1. Declare a variable `user` and take the name using `prompt`. Display the value stored in `user` using `alert`.
@@ -7,7 +7,13 @@
 4. Now change the value of `user` to `John` and log the value of both `user` and `userName`.
 */
 let user = prompt(`Enter your name`);
-alert(`Hello ${user}. Welcome to programming.`);
+let userName=user;
+console.log(`${user}${userName}`);
+let age=22, isLearning=true;
+user="John";
+console.log(`${user} ${userName}`);
+
+
 /* 2.
 Use `prompt` to take two numbers from user and store it in variable `numA` and `numB`. Create a third variable called `sum`, using `+` operator add numA and numB , store it in varible `sum` and using alert display `sum` in browser.
 */
@@ -65,13 +71,9 @@ Example:
 */
 let value1 = prompt(`Enter first value`);
 let value2 = prompt(`Enter second value`);
-if (value1 === value2) {
-  alert(true);
+if(isNaN(value1)||isNaN(value2)){
+    console.log(`Enter valid value`);
 }
-else if(value1!==value2){
-    alert(false);
-} 
-else (value1 || value2 === true || null || undefined) {
-  alert(`Enter a valid value.`);
+else if(value1===value2){
+consol.log(`Values are equal to each other`);
 }
-
